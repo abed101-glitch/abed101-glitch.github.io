@@ -8,7 +8,7 @@
   <meta property="og:title" content="Abed Gazi — Software Engineer" />
   <meta property="og:description" content="Full-stack development · Python · Automation · IT systems" />
   <meta property="og:type" content="website" />
-  <title>Abed Gazi — Software Engineer</title>
+  <title>Abed Gazi — Data &amp; AI Engineer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -33,9 +33,9 @@
   <main>
     <section class="hero section-wrap" id="home">
       <div class="hero-copy reveal">
-        <div class="eyebrow"><span class="pulse"></span> SOFTWARE ENGINEERING · DHAKA, BD</div>
+        <div class="eyebrow"><span class="pulse"></span> DATA &amp; AI ENGINEERING · DHAKA, BD</div>
         <h1>I build digital<br><span class="gradient-text">things that work.</span></h1>
-        <p class="hero-lead">I’m Abed — a software developer focused on full-stack products, intelligent automation, and dependable systems. I turn complex requirements into useful, polished experiences.</p>
+        <p class="hero-lead">I’m Abed — a data &amp; AI engineer. I build data pipelines, retrieval-augmented LLM systems and full-stack products, and I measure whether they actually work.</p>
         <div class="hero-actions">
           <a class="button button-primary" href="#work">Explore my work <span>↘</span></a>
           <a class="button button-quiet" href="mailto:gazi.abed@yahoo.com">Get in touch <span>↗</span></a>
@@ -67,15 +67,29 @@
     </section>
 
     <section class="ticker" aria-label="Technical focus">
-      <div class="ticker-track"><span>PYTHON</span><b>✳</b><span>REACT</span><b>✳</b><span>NODE.JS</span><b>✳</b><span>POSTGRESQL</span><b>✳</b><span>n8n AUTOMATION</span><b>✳</b><span>LINUX</span><b>✳</b><span>PYTHON</span><b>✳</b><span>REACT</span><b>✳</b><span>NODE.JS</span><b>✳</b><span>POSTGRESQL</span><b>✳</b><span>n8n AUTOMATION</span><b>✳</b><span>LINUX</span><b>✳</b></div>
+      <div class="ticker-track"><span>PYTHON</span><b>✳</b><span>SQL</span><b>✳</b><span>DBT</span><b>✳</b><span>AIRFLOW</span><b>✳</b><span>RAG</span><b>✳</b><span>PGVECTOR</span><b>✳</b><span>POSTGRESQL</span><b>✳</b><span>REACT</span><b>✳</b><span>PYTHON</span><b>✳</b><span>SQL</span><b>✳</b><span>DBT</span><b>✳</b><span>AIRFLOW</span><b>✳</b><span>RAG</span><b>✳</b><span>PGVECTOR</span><b>✳</b><span>POSTGRESQL</span><b>✳</b><span>REACT</span><b>✳</b></div>
     </section>
 
     <section class="section-wrap work-section" id="work">
       <div class="section-heading reveal"><div><div class="eyebrow">SELECTED PROJECTS <span class="eyebrow-line"></span></div><h2>Proof of <span class="gradient-text">work.</span></h2></div><p>A few things I’ve built, tested, and learned from — with an emphasis on practical engineering and measurable outcomes.</p></div>
       <div class="project-grid">
+        <article class="project-card reveal">
+          <div class="project-art sys-art">
+            <div class="art-top"><span>01 / AI ENGINEERING</span><span>RAG · LLM</span></div>
+            <div class="sys-window"><div class="sys-window-head"><span>LABOUR ACT Q&amp;A</span><span>EVALUATION</span></div><div class="sys-row"><span>HIT@5</span><div class="bar"><i style="width:98%"></i></div><b>97.7%</b></div><div class="sys-row"><span>CITES</span><div class="bar"><i style="width:91%"></i></div><b>90.7%</b></div><div class="sys-row"><span>REFUSE</span><div class="bar"><i style="width:100%"></i></div><b>100%</b></div><div class="sys-big"><strong>97.7%</strong><span>RETRIEVAL HIT@5</span></div></div>
+          </div>
+          <div class="project-info"><div class="project-kicker">PYTHON · PGVECTOR · OLLAMA · FASTAPI</div><h3>Bangladesh Labour Act — RAG Q&amp;A</h3><p>Local retrieval-augmented generation over the 179-page Labour Act gazette. Answers cite the correct section 90.7% of the time and refuse out-of-scope questions, with an evaluation harness and a retrieval ablation that replaced hybrid search with a section router.</p><div class="project-bottom"><a href="https://github.com/abed101-glitch/bd-labour-law-rag" target="_blank" rel="noreferrer">View project <span>↗</span></a><span class="project-type">LLM · RAG · EVALUATION</span></div></div>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-art sys-art">
+            <div class="art-top"><span>02 / DATA ENGINEERING</span><span>ELT · DBT</span></div>
+            <div class="sys-window"><div class="sys-window-head"><span>AIR QUALITY ELT</span><span>8 CITIES</span></div><div class="sys-row"><span>ROWS</span><div class="bar"><i style="width:90%"></i></div><b>~400K</b></div><div class="sys-row"><span>TESTS</span><div class="bar"><i style="width:100%"></i></div><b>35/35</b></div><div class="sys-row"><span>DHAKA</span><div class="bar"><i style="width:96%"></i></div><b>9.6× WHO</b></div><div class="sys-big"><strong>35</strong><span>DBT DATA TESTS PASSING</span></div></div>
+          </div>
+          <div class="project-info"><div class="project-kicker">PYTHON · POSTGRESQL · DBT · AIRFLOW</div><h3>Bangladesh Air-Quality Pipeline</h3><p>End-to-end ELT: Open-Meteo APIs → Python data-quality checks with a quarantine table → PostgreSQL → dbt star schema → Airflow 3 daily DAG → Streamlit dashboard. CI runs a live ingest and the full dbt build.</p><div class="project-bottom"><a href="https://github.com/abed101-glitch/bd-air-quality-pipeline" target="_blank" rel="noreferrer">View project <span>↗</span></a><span class="project-type">DATA ENGINEERING</span></div></div>
+        </article>
         <article class="project-card project-featured reveal">
           <div class="project-art fraud-art">
-            <div class="art-top"><span>01 / DATA & AUTOMATION</span><span class="art-status"><i></i> PIPELINE ACTIVE</span></div>
+            <div class="art-top"><span>03 / DATA & AUTOMATION</span><span class="art-status"><i></i> PIPELINE ACTIVE</span></div>
             <div class="fraud-visual">
               <div class="node node-source">TRANSACTION<br><b>STREAM</b></div><div class="connector"></div>
               <div class="node node-core"><span>AI</span><b>SCORING</b></div><div class="connector"></div>
@@ -88,14 +102,14 @@
         </article>
         <article class="project-card reveal">
           <div class="project-art sys-art">
-            <div class="art-top"><span>02 / SYSTEMS</span><span>LINUX · C</span></div>
+            <div class="art-top"><span>04 / SYSTEMS</span><span>LINUX · C</span></div>
             <div class="sys-window"><div class="sys-window-head"><span>SYS MONITOR</span><span>LIVE METRICS</span></div><div class="sys-row"><span>CPU</span><div class="bar"><i style="width:68%"></i></div><b>68%</b></div><div class="sys-row"><span>MEM</span><div class="bar"><i style="width:42%"></i></div><b>42%</b></div><div class="sys-row"><span>PROC</span><div class="bar"><i style="width:83%"></i></div><b>83%</b></div><div class="sys-big"><strong>4.8×</strong><span>FEWER SYSTEM CALLS</span></div></div>
           </div>
           <div class="project-info"><div class="project-kicker">C · LINUX · PROCFS</div><h3>sysmon</h3><p>A Linux CPU, memory, and process monitor. The optimized implementation makes 4.8× fewer system calls and runs 3.3× faster, verified with strace.</p><div class="project-bottom"><a href="https://github.com/abed101-glitch/sysmon" target="_blank" rel="noreferrer">View project <span>↗</span></a><span class="project-type">SYSTEMS PROGRAMMING</span></div></div>
         </article>
         <article class="project-card reveal">
           <div class="project-art flood-art">
-            <div class="art-top"><span>03 / MACHINE LEARNING</span><span>IN PROGRESS</span></div>
+            <div class="art-top"><span>05 / MACHINE LEARNING</span><span>IN PROGRESS</span></div>
             <div class="satellite-grid"><div class="satellite-map"><span class="map-contour c1"></span><span class="map-contour c2"></span><span class="map-contour c3"></span><span class="map-water"></span><span class="map-cross">+</span></div><div class="map-label">SENTINEL-1 SAR<br><b>BANGLADESH</b></div></div>
             <div class="flood-caption">FLOOD SEGMENTATION / U-NET</div>
           </div>
@@ -103,7 +117,7 @@
         </article>
         <article class="project-card reveal">
           <div class="project-art commerce-art">
-            <div class="art-top"><span>04 / FULL-STACK PRODUCT</span><span>DEPLOYED</span></div>
+            <div class="art-top"><span>06 / FULL-STACK PRODUCT</span><span>DEPLOYED</span></div>
             <div class="browser-mock"><div class="browser-bar"><i></i><i></i><i></i><span>Mimosa Organic Solution</span></div><div class="browser-content"><div class="browser-brand">mimosa<span>.</span></div><div class="browser-hero"><div><small>THOUGHTFULLY MADE</small><b>Everyday<br>essentials.</b><span>DISCOVER THE COLLECTION ↗</span></div><div class="product-orb"></div></div><div class="browser-products"><i></i><i></i><i></i></div></div></div>
           </div>
           <div class="project-info"><div class="project-kicker">NEXT.JS · TYPESCRIPT · POSTGRESQL</div><h3>Mimosa Organic Solution</h3><p>Client e-commerce platform with an admin panel, transactional order processing, inventory updates, secure sessions, guest checkout, and a modular payment integration layer.</p><div class="project-bottom"><span class="project-note">CLIENT DELIVERY</span><span class="project-type">E-COMMERCE</span></div></div>
@@ -127,7 +141,8 @@
         <div class="skills-panel"><div class="panel-title"><span>TOOLKIT</span><span>WHAT I WORK WITH</span></div>
           <div class="skill-group"><h4>LANGUAGES</h4><div class="skill-list"><span>Python</span><span>JavaScript</span><span>TypeScript</span><span>C</span><span>SQL</span></div></div>
           <div class="skill-group"><h4>BACKEND & FRONTEND</h4><div class="skill-list"><span>FastAPI</span><span>Node.js</span><span>Express</span><span>React</span><span>Next.js</span><span>Tailwind</span></div></div>
-          <div class="skill-group"><h4>DATA & INFRASTRUCTURE</h4><div class="skill-list"><span>PostgreSQL</span><span>MongoDB</span><span>scikit-learn</span><span>PyTorch</span><span>Linux</span><span>Docker</span><span>Git</span></div></div>
+          <div class="skill-group"><h4>DATA ENGINEERING</h4><div class="skill-list"><span>PostgreSQL</span><span>Oracle 19c</span><span>dbt</span><span>Apache Airflow</span><span>pandas</span><span>MongoDB</span><span>Docker</span><span>Git</span></div></div>
+          <div class="skill-group"><h4>AI &amp; ML</h4><div class="skill-list"><span>RAG</span><span>Embeddings</span><span>pgvector</span><span>Ollama</span><span>LLM evaluation</span><span>scikit-learn</span><span>PyTorch</span></div></div>
           <div class="skill-group"><h4>AUTOMATION</h4><div class="skill-list"><span>n8n</span><span>Webhooks</span><span>Telegram API</span><span>Google Sheets API</span></div></div>
         </div>
       </div>
